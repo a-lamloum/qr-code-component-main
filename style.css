@@ -1,0 +1,91 @@
+/* import Outfit font - google font  */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* General styles  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* varidables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --transition: all 0.35s ease;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--light-gray);
+}
+
+main {
+  width: 375px;
+  height: 100%;
+  margin: 4rem auto;
+  transition: var(--transition);
+}
+.card {
+  background-color: var(--white);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  transition: var(--transition);
+}
+.card img {
+  width: 100%;
+  margin: auto;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+.card h1 {
+  font-size: 1.5rem;
+  margin: 1.5rem 1rem;
+  color: var(--Dark-blue);
+  transition: var(--transition)
+}
+
+.card p {
+    color: var(--Grayish-blue);
+    margin: auto 2rem 2rem;
+    font-size: 15px;
+}
+footer {
+    width: 65%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 15px;
+    color: var(--Grayish-blue);
+    transition: var(--transition)
+}
+footer a {
+    color: var(--Dark-blue);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px){
+    main {
+        width: 65%;
+    }
+    .card, .card img {
+        border-radius: 1.5rem;
+    }
+    .card h1 {
+        font-size: 1rem;
+        margin: 20px 10px;
+    }
+    .card p {
+        font-size: 13px;
+        margin: 0 10px 20px;
+
+    }
+    footer {
+        font-size: 10px;
+    }
+}
