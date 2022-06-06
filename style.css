@@ -24,14 +24,14 @@ body {
 }
 
 main {
-  width: 375px;
+  width: 345px;
   height: 100%;
   margin: 4rem auto;
   transition: var(--transition);
 }
 .card {
   background-color: var(--white);
-  border-radius: 2rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -41,7 +41,7 @@ main {
 .card img {
   width: 100%;
   margin: auto;
-  border-radius: 2rem;
+  border-radius: 1rem;
   transition: var(--transition);
 }
 .card h1 {
@@ -74,7 +74,7 @@ footer a {
         width: 65%;
     }
     .card, .card img {
-        border-radius: 1.5rem;
+        border-radius: 11rem;
     }
     .card h1 {
         font-size: 1rem;
